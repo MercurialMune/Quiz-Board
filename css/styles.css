@@ -1,24 +1,48 @@
-body, html {
-    height: 100%;
+body {
+  margin: 0;
+  font-family: sans-serif;
 }
-/* .hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
 
-    /* Set a specific height */
-    height: 50%;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.hero {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Sizing */
+  width: 100%;
+  height: 100vh;
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Text styles */
+  text-align: center;
 }
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-} */
+
+.hero h2 {
+  /* Text styles */
+  font-size: 4em;
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero .button {
+  /* Positioning and sizing */
+  display: block;
+  width: 150px;
+  /* Border styles */
+  border: 2px solid white;
+  border-radius: 20px;
+  /* Padding and margins */
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Text styles */
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
