@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: pink;
 }
 
 .hero {
@@ -30,6 +31,8 @@ body {
 }
 
 .hero .button {
+  /* button background */
+  background-color:#e407ef;
   /* Positioning and sizing */
   display: block;
   width: 150px;
@@ -45,4 +48,65 @@ body {
   color: white;
   text-decoration: none;
   font-size: 1.5em;
+}
+.well{
+  margin: 3%;
+  justify-content: flex-start;
+}
+/* .well h4{
+  text-align: center;
+} */
+/* input {
+  /* display: block; */
+  /* width: 300px; */
+  /* Border styles */
+  /* border: 2px solid black; */
+  /* border-radius: 20px; */
+  /* Padding and margins */
+  /* padding: 1em; */
+  /* margin: 1em; */
+/* } */
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input [type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  /* padding: 12px 20px; */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input [type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  /* padding: 12px 20px; */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+/* #startstuff{
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */
+#firststuff{
+  height: 100vh;
 }
