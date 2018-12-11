@@ -6,7 +6,7 @@ body {
 
 .hero {
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(../img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body {
 
 .hero .button {
   /* button background */
-  background-color:#e407ef;
+  background-color: #e407ef;
   /* Positioning and sizing */
   display: block;
   width: 150px;
@@ -49,25 +49,27 @@ body {
   text-decoration: none;
   font-size: 1.5em;
 }
-.well{
+
+.well {
   margin: 3%;
   justify-content: flex-start;
 }
+
 /* .well h4{
   text-align: center;
 } */
 /* input {
   /* display: block; */
-  /* width: 300px; */
-  /* Border styles */
-  /* border: 2px solid black; */
-  /* border-radius: 20px; */
-  /* Padding and margins */
-  /* padding: 1em; */
-  /* margin: 1em; */
+/* width: 300px; */
+/* Border styles */
+/* border: 2px solid black; */
+/* border-radius: 20px; */
+/* Padding and margins */
+/* padding: 1em; */
+/* margin: 1em; */
 /* } */
 /* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
+input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -92,6 +94,7 @@ input [type=submit] {
   cursor: pointer;
   float: right;
 }
+
 input [type=reset] {
   background-color: #4CAF50;
   color: white;
@@ -101,12 +104,20 @@ input [type=reset] {
   cursor: pointer;
   float: right;
 }
+
 /* #startstuff{
   display: inline-block;
   align-items: center;
   justify-content: center;
   text-align: center;
 } */
-#firststuff{
-  height: 100vh;
+#firststuff {
+  /* height: 100vh; */
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
