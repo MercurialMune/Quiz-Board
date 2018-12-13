@@ -13,10 +13,10 @@ To deploy the program, stage it on Git and push it to GitHub. Then, create a gh-
 The live page can be found in the following link: [The Mercurial JavaScript Quiz Board](https://mercurialmune.github.io/Triangle-Tracker/)
 
 * After Deployment, the following image shows what the expected output would be.
-![A screenshot of what the program looks like](img/screenshot1.jpg)
-![A screenshot of what the program looks like](img/screenshot2.jpg)
-![A screenshot of what the program looks like](img/screenshot3.jpg)
-![A screenshot of what the program looks like](img/screenshot4.jpg)
+![A screenshot of what the program looks like](img/screenshot1.png)
+![A screenshot of what the program looks like](img/screenshot2.png)
+![A screenshot of what the program looks like](img/screenshot3.png)
+![A screenshot of what the program looks like](img/screenshot4.png)
 
 ## Behavior Driven Development
   As with any other reputable development project, the Mercurial JavaScript Quiz Board followed a systematic process between its conceptualization stage and its actual implementation. First, it was considered that users needed to perform certain tasks. However, due to the simplicity of the program, there wasn't much users could do with it. However, it was assumed that in the least, users should:
