@@ -6,106 +6,134 @@
   <title>The Mercurial JavaScript Quiz Board</title>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <script src="js/script.js" charset="utf-8"></script>
+
 </head>
 
 <body>
   <!-- sidebar -->
   <div class="well0">
     <nav id="sidebar">
-      <div class="sidebar-header">
-        <ul class="list-unstyled components">
-          <li class="active">
-            <a href="index.html" data-toggle="collapse" aria-expanded="false" class="menu">
-              <h3>Home</h3>
-            </a>
-            <h3>Start Over<h3>
-                <h3>View Results<h3>
-                    <h3>Progress<h3>
-                        <div class="progress">
-                          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                            <span class="sr-only">45% Complete</span>
-                          </div>
-                        </div>
-          </li>
-        </ul>
-      </div>
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="index.html" class="butt-on">
+            <h3>Home</h3>
+          </a>
+          <br>
+          <a href="#" class="butt-on">
+            <h3>View Results<h3>
+          </a>
+          <a href="#" class="butt-on">
+            <h3>Progress<h3>
+          </a>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+              <span class="sr-only">45% Complete</span>
+            </div>
+          </div>
+        </li>
+      </ul>
     </nav>
   </div>
   <!-- body content -->
   <div class="body-content">
-    <div class="container">
-      <h3>javaScriptQuiz</h3>
-      <form id="startstuff" method="post" action="" enctype="text/plain">
+    <!-- <div class="container"> -->
+    <div id="toggleInstructions">
+    <div class="well">
+      <h4 id="firstpg">Instructions</h4>
+      <ul>
+        <li>Presented herein is a series of javaScript Multiple choice questions.</li>
+        <li>Users are to choose the correct answer (or answers) to each question.</li>
+        <li>Users must answer all questions.</li>
+        <li>After completing the test, click on the Submit button at the end of
+          the series.</li>
+        <li>The user will then be able to view their results by clicking the check button on top of their page.</li>
+        <li>Enjoy !!!</li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="well">
+
+      <h2>javaScript Quiz</h2>
+
+      <form id="quizform" method="post" action="" enctype="text/plain">
         <P>1. What is the correct JavaScript syntax to write "Hello World"?<BR>
-          <input type="radio" name="1. What is the correct JavaScript syntax to write " Hello World"?" value="a) response.write(" Hello World")">a) response.write("Hello World")<BR>
-          <input type="radio" name="1. What is the correct JavaScript syntax to write " Hello World"?" value="b) " Hello World"">b) "Hello World"<BR>
-          <input type="radio" name="1. What is the correct JavaScript syntax to write " Hello World"?" value="c) document.write(" Hello World")">c) document.write("Hello World")<BR>
+          <input type="radio" id="opt1" name="1" Hello World"?" value="0">a) response.write("Hello World")<BR>
+          <input type="radio" id="opt2" name="1" Hello World"?" value="0">b) "Hello World"<BR>
+          <input type="radio" id="opt3" name="1" Hello World"?" value="10">c) document.write("Hello World")<BR>
         </p>
 
         <P>2. Where is the correct place to insert a JavaScript?<BR>
-          <input type="radio" name="2. Where is the correct place to insert a JavaScript?" value="a) Both the <head> section and the <body> section are correct">a) Both the head section and the body section are correct<BR>
-          <input type="radio" name="2. Where is the correct place to insert a JavaScript?" value="b) The <body> section">b) The body section<BR>
-          <input type="radio" name="2. Where is the correct place to insert a JavaScript?" value="c) The <head> section">c) The head section<BR>
-        </p>3. Inside the script tags, what is the correct syntax for referring to an external script called "xxx.js"? <br>
+          <input type="radio" id="2opt1" name="2" value="10">a) Both the head section and the body section are correct<BR>
+          <input type="radio" id="2opt2" name="2" value="0">b) The body section<BR>
+          <input type="radio" id="2opt3" name="2" value="0">c) The head section<BR>
 
+        </p>3. Inside the script tags, what is the correct syntax for referring to an external script called "xxx.js"? <br>
         <P>
-          <input type="radio" name="3. What is the correct syntax for referring to an external script called " xxx.js"?" value="a) src=" xxxjs"">a) src="xxx.js"<BR>
-          <input type="radio" name="3. What is the correct syntax for referring to an external script called " xxx.js"?" value="b) name=" xxx.js"">b) name="xxx.js"<BR>
-          <input type="radio" name="3. What is the correct syntax for referring to an external script called " xxx.js"?" value="c) href=" xxx.js"">c) href="xxx.js"<BR>
+          <input type="radio" id="3opt1" name="3" value="10">a) src="xxx.js"<BR>
+          <input type="radio" id="3opt2" name="3" value="0">b) name="xxx.js"<BR>
+          <input type="radio" id="3opt3" name="3" value="0">c) href="xxx.js"<BR>
         </p>
 
         <P>4. An external JavaScript must contain the script tag<BR>
-          <input type="radio" name="An external JavaScript must contain the script tag" value="a) False">a) False<BR>
-          <input type="radio" name="An external JavaScript must contain the script tag" value="b) True">b) True<BR>
-          <input type="radio" name="An external JavaScript must contain the script tag" value="c) It depends">c) It depends<BR>
+          <input type="radio" id="4opt1" name="4" value="0">a) False<BR>
+          <input type="radio" id="4opt2" name="4" value="10">b) True<BR>
+          <input type="radio" id="4opt3" name="4" value="0">c) It depends<BR>
         </p>
 
         <P>5. Which HTML attribute is used to define inline styles?<BR>
-          <input type="radio" name="5. Which HTML attribute is used to define inline styles?" value="a) style">a) style<BR>
-          <input type="radio" name="5. Which HTML attribute is used to define inline styles?" value="b) class">b) class<BR>
-          <input type="radio" name="5. Which HTML attribute is used to define inline styles?" value="c) styles">c) styles<BR>
+          <input type="radio" id="5opt1" name="5" value="10">a) style<BR>
+          <input type="radio" id="5opt2" name="5" value="0">b) class<BR>
+          <input type="radio" id="5opt3" name="5" value="0">c) styles<BR>
         </p>
 
         <P>6. In a form, if you want users to select only one option out of many, use:<BR>
-          <input type="radio" name="6. In a form, if you want users to select only one option out of many, use:" value="a) check boxes.">a) check boxes.<BR>
-          <input type="radio" name="6. In a form, if you want users to select only one option out of many, use:" value="b) radio buttons.">b) radio buttons.<BR>
-          <input type="radio" name="6. In a form, if you want users to select only one option out of many, use:" value="c) text boxes.">c) text boxes.<BR>
+          <input type="radio" id="6opt1" name="6" value="0">a) check boxes.<BR>
+          <input type="radio" id="6opt2" name="6" value="10">b) radio buttons.<BR>
+          <input type="radio" id="6opt3" name="6" value="0">c) text boxes.<BR>
         </p>
 
         <P>7. The introduction of CGI scripts changed the way that the Web was used because:<BR>
-          <input type="radio" name="7. The introduction of CGI scripts changed the way that the Web was used because:" value="a) of the ability to maintain customer databases.">a) of the ability to maintain customer databases.<BR>
-          <input type="radio" name="7. The introduction of CGI scripts changed the way that the Web was used because:" value="b) customers acquired the ability to locate and purchase merchandise online.">b) customers acquired the ability to locate
+          <input type="radio" id="7opt1" name="7" value="0">a) of the ability to maintain customer databases.<BR>
+          <input type="radio" id="7opt2" name="7" value="0">b) customers acquired the ability to locate
           and purchase merchandise online.<BR>
-          <input type="radio" name="7. The introduction of CGI scripts changed the way that the Web was used because:" value="c) both a and b">c) both a and b<BR>
+          <input type="radio" id="7opt3" name="7" value="10">c) both a and b<BR>
         </p>
 
         <P>8. A named element in a JavaScript program that is used to store and retrieve data is a _____.:<BR>
-          <input type="radio" name="8. A named element in a JavaScript program that is used to store and retrieve data is a _____." value="a) Method">a) Method<BR>
-          <input type="radio" name="8. A named element in a JavaScript program that is used to store and retrieve data is a _____." value="b) assignment operator">b) assignment operator<BR>
-          <input type="radio" name="8. A named element in a JavaScript program that is used to store and retrieve data is a _____." value="c) Variable">c) Variable<BR>
+          <input type="radio" id="8opt1" name="8" value="0">a) Method<BR>
+          <input type="radio" id="8opt2" name="8" value="0">b) assignment operator<BR>
+          <input type="radio" id="8opt3" name="8" value="10">c) Variable<BR>
         </p>
 
         <P>9. In JavaScript, what would be the proper form of address in the object hierarchy for the second element in a form called "info"?:<BR>
-          <input type="radio" name="9. In JavaScript, what would be the proper form of address in the object hierarchy for the second element in a form called " info"?" value="a) document.info.elements[1]">a) document.info.elements[1]<BR>
-          <input type="radio" name="9. In JavaScript, what would be the proper form of address in the object hierarchy for the second element in a form called " info"?" value="b) document.info.elements[2]">b) document.info.elements[2]<BR>
-          <input type="radio" name="9. In JavaScript, what would be the proper form of address in the object hierarchy for the second element in a form called " info"?" value="c) document.forms.info.elements[2]">c) document.forms.info.elements[2]<BR>
+          <input type="radio" id="9opt1" name="9" info"?" value="10">a) document.info.elements[1]<BR>
+          <input type="radio" id="9opt2" name="9" info"?" value="0">b) document.info.elements[2]<BR>
+          <input type="radio" id="9opt3" name="9" info"?" value="0">c) document.forms.info.elements[2]<BR>
         </p>
 
         <P>10. In JavaScript, which of the following is NOT an assignment operator?:<BR>
-          <input type="radio" name="10. In JavaScript, which of the following is NOT an assignment operator?" value="a) +=">a) +=<BR>
-          <input type="radio" name="10. In JavaScript, which of the following is NOT an assignment operator?" value="b) ||">b) ||<BR>
-          <input type="radio" name="10. In JavaScript, which of the following is NOT an assignment operator?" value="c) *=">c) *=<BR>
+          <input type="radio" id="10opt1" name="10" value="0">a) +=<BR>
+          <input type="radio" id="10opt1" name="10" value="10">b) ||<BR>
+          <input type="radio" id="10opt1" name="10" value="0">c) *=<BR>
         </p>
         <br>
         <br>
+        <button id="finsendit" type="button" name="button">Submit</button>
+      </form>
+      <!-- </div> -->
+      <br>
+      <br>
+      <h4 class="showResults">Your Results</h4>
     </div>
-    <button id="finsendit" type="button" name="button">Submit</button>
-    <br>
-    <br>
-    </form>
-  </div>
-  </div>
+    <!-- <div class="well">
+      <h4 class="showResults">Your Results</h4>
+
+    </div> -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+
+
 </body>
 
 </html>
