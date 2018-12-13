@@ -13,32 +13,29 @@ To deploy the program, stage it on Git and push it to GitHub. Then, create a gh-
 The live page can be found in the following link: [The Mercurial JavaScript Quiz Board](https://mercurialmune.github.io/Triangle-Tracker/)
 
 * After Deployment, the following image shows what the expected output would be.
-![A screenshot of what the program looks like](img/screenshot.jpg)
+![A screenshot of what the program looks like](img/screenshot1.jpg)
+![A screenshot of what the program looks like](img/screenshot2.jpg)
+![A screenshot of what the program looks like](img/screenshot3.jpg)
+![A screenshot of what the program looks like](img/screenshot4.jpg)
 
 ## Behavior Driven Development
   As with any other reputable development project, the Mercurial JavaScript Quiz Board followed a systematic process between its conceptualization stage and its actual implementation. First, it was considered that users needed to perform certain tasks. However, due to the simplicity of the program, there wasn't much users could do with it. However, it was assumed that in the least, users should:
-  * Input their names
-  * Input their emails if they wish to
+
   * View the posted javaScript questions
   * Choose the correct answers among the multiple choices
   * Choose multiple answers where cases allow such an option
-  * Save their progress
   * View their progress inconclusively navigating the series
   * Submit their answers
   * View their results after completion
-  * Receive their results in an email if they provided one
 
   Considering these two desired behaviors, it was evident that the program should at least:
 
-  1. Provide an input method for capturing user details
-  2. Provide suitable answering methodologies such as option boxes and check-boxes
-  3. Provide a button to save their progress in case a page reloads
-  4. Provide a status bar to show the progress of a quiz
-  5. Provide a submit button to check the answers for correctness
-  6. Provide a back-end code to mark the answers and grade the users
-  7. Provide a means to display the results of an attempt
-  8. Provide a means to toggle the visibility of the results
-  9. Provide an e-mail service for users to take with them their results for posterity purposes
+  1. Provide suitable answering methodologies such as option boxes and check-boxes
+  2. Provide a status bar to show the progress of a quiz
+  3. Provide a submit button to check the answers for correctness
+  4. Provide a back-end code to mark the answers and grade the users
+  5. Provide a means to display the results of an attempt
+  6. Provide a means to toggle the visibility of the results
 
 ## Built With
 
