@@ -1,3 +1,4 @@
+//User Interface Logic
 $(document).ready(function() {
   $(".showResults").hide();
 
@@ -7,6 +8,7 @@ $(document).ready(function() {
     $(".showResults").toggle();
     $("#toggleInstructions").hide();
 
+// Business Logic
     var options = [];
     var right = 0;
 
@@ -24,9 +26,7 @@ $(document).ready(function() {
     for (var option in options) {
       right += options[option];
     }
-
     $(".showResults").show();
-
     $(".showResults").html("Ssup! Out of a possible 100 , your score was" + " " + right);
 
   });
