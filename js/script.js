@@ -3,7 +3,9 @@ $(document).ready(function() {
 
   $("#finsendit").click(function() {
     $("#quizform").hide();
+    $("#firstpg").hide();
     $(".showResults").toggle();
+    $("#toggleInstructions").hide();
 
     var options = [];
     var right = 0;
