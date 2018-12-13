@@ -20,22 +20,12 @@ The live page can be found in the following link: [The Mercurial JavaScript Quiz
 
 ## Behavior Driven Development
   As with any other reputable development project, the Mercurial JavaScript Quiz Board followed a systematic process between its conceptualization stage and its actual implementation. First, it was considered that users needed to perform certain tasks. However, due to the simplicity of the program, there wasn't much users could do with it. However, it was assumed that in the least, users should:
-
-  * View the posted javaScript questions
-  * Choose the correct answers among the multiple choices
-  * Choose multiple answers where cases allow such an option
-  * View their progress inconclusively navigating the series
-  * Submit their answers
-  * View their results after completion
-
-  Considering these two desired behaviors, it was evident that the program should at least:
-
-  1. Provide suitable answering methodologies such as option boxes and check-boxes
-  2. Provide a status bar to show the progress of a quiz
-  3. Provide a submit button to check the answers for correctness
-  4. Provide a back-end code to mark the answers and grade the users
-  5. Provide a means to display the results of an attempt
-  6. Provide a means to toggle the visibility of the results
+  | Behavior                            | Specification                               |
+  | ------------------------------------|:-------------------------------------------:|
+  | View the posted javaScript questions| Provide a Form                              |
+  | Choose the correct answers          | Provide option boxes                        |  
+  | Submit their answers                | Provide a submit button                     |   
+  | View their results                  | Jquery function to toggle results visibility|
 
 ## Built With
 
