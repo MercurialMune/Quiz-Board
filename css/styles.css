@@ -68,20 +68,21 @@ input [type=submit] {
   cursor: pointer;
   float: right;
 }
-.butt-on{
+
+.butt-on {
   background-color: #4CAF50;
   color: white;
-  width:95%;
+  width: 95%;
   border: 2px solid white;
   border-radius: 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   display: flex;
-  margin:5px;
-
+  margin: 5px;
 }
-.butt-on h3{
+
+.butt-on h3 {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -99,7 +100,7 @@ input [type=submit] {
 
 #sidebar {
   width: 100%;
-  color:white;
+  color: white;
 }
 
 .body-content {
@@ -131,7 +132,7 @@ input [type=submit] {
   display: block;
   background-color: #4CAF50;
   border-radius: 3px;
-  border:none;
+  border: none;
   padding: 10px;
   color: white;
   font-weight: bold;
@@ -141,9 +142,10 @@ input [type=submit] {
 }
 
 .body-content {
-  /* margin-top: 20px; */
   padding: 20px;
   background-color: #111;
+  bottom: 20px;
+  min-height: 100vh;
 }
 
 .body-content h2 {
@@ -168,7 +170,6 @@ input [type=submit] {
   display: block;
   border-radius: 2px;
   border-color: #0d7726;
-  /* border-radius: 20px; */
   font-weight: bold;
   padding: 20px;
 }
@@ -176,6 +177,15 @@ input [type=submit] {
 .header h2 {
   color: white;
 }
-.showResults{
+
+.showResults {
   text-align: center;
+  }
+.bootlogo img{
+  max-width: 100%;
+  height:auto;
+}
+.jQuelogo img{
+  max-width: 100%;
+  height: auto;
 }
